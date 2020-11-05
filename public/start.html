@@ -15,14 +15,29 @@
 </head>
 
 <body>
-  <h1>base app</h1>
-  <button ><a href="login.html">  Login </a></button>
-  <button ><a href="signup.html">  signup </a></button>
-  <button ><a href="/start">  game </a></button>
+  <div class="page-header">
+    <h1 class="centered">Enter code </h1>
+    <p class="lead centered"><p id="output" class="lead centered"></p> <p class="lead centered"> to join </p></p>
+  </div>
+  <div class="justsmallenough centered panel panel-default">
+    <div class="panel-body">
+      <div class="input-group">
+        <input id="code" type="text" class="form-control">
+        <span class="input-group-btn">
+          
+        <button id="lobbybtn" class="btn btn-default" type="button">Join</button>
+        <button style="display: none" id="cpubtn" class="btn btn-warning" type="button">CPU</button>
+        </span>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/javascripts/socket.js"></script>
 <script src="/javascripts/index.js"></script>
+<script> var a = Math.floor(Math.random()*90000) + 10000; 
+document.getElementById("output").innerHTML=a;
+</script>
 
 </html>

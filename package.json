@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/sshh12/Rummy#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.5",
     "express": "^4.16.2",
+    "firebase-admin": "^9.3.0",
     "ws": "^4.0.0"
   }
 }
