@@ -1,28 +1,754 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+
+<!-- Mirrored from pixner.net/dooplo/dooplo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Nov 2020 06:08:41 GMT -->
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="forntEnd-Developer" content="Mamunur Rashid">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> DS - Rummy </title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.html" type="image/x-icon">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Plugin css -->
+	<link rel="stylesheet" href="assets/css/plugin.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-
-  <title>Rummy</title>
-
-  <link rel="stylesheet" href="/stylesheets/main.css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" crossorigin="anonymous">
-
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-  <h1>base app</h1>
-  <button ><a href="login.html">  Login </a></button>
-  <button ><a href="signup.html">  signup </a></button>
-  <button ><a href="/start">  game </a></button>
+	<!-- preloader area start -->
+	<div class="preloader" id="preloader">
+		<div class="loader loader-1">
+			<div class="loader-outter"></div>
+			<div class="loader-inner"></div>
+		</div>
+	</div>
+	<!-- preloader area end -->
+
+	<!-- Header Area Start  -->
+	<header class="header">
+		<!-- Top Header Area Start -->
+
+		<!-- Top Header Area End -->
+		<!--Main-Menu Area Start-->
+		<div class="mainmenu-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">                 
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="index.html">
+								<h5>DS-RUMMY</h5>
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse fixed-height" id="main_menu">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home
+												<div class="mr-hover-effect"></div></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="awards.html">Awards
+												<div class="mr-hover-effect"></div></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About US
+												<div class="mr-hover-effect"></div></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact
+												<div class="mr-hover-effect"></div></a>
+									</li>
+									
+									<li class="nav-item">
+											<a class="nav-link" href="login.html">Log-In
+													<div class="mr-hover-effect"></div></a>
+										</li>
+								</ul>
+								<a href="signup.html" class="mybtn1" > Sign-Up</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Main-Menu Area Start-->
+	</header>
+	<!-- Header Area End  -->
+
+	<!-- Hero Area Start -->
+	<div class="hero-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 d-flex align-self-center">
+					<div class="left-content">
+						<div class="content">
+							<h5 class="subtitle">
+								New RUMMY GAME
+							</h5>
+							<h1 class="title">
+									PLay To WIN
+							</h1>
+							<p class="text">
+									Play, Invest ,WIN  and Join the
+									Tournament with high rewards at DS-Rummy	
+							</p>
+							<div class="links">
+								<a href="signup.html" class="mybtn1 link1">Get Started Now!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					
+						<img src="assets/images/cards.png" alt="">
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero Area End -->
+
+	<!-- Featured Game Area Start -->
+	<section class="featured-game">
+		<!-- Features Area Start -->
+		<div class="features">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="feature-box">
+							<div class="feature-box-inner">
+								<div class="row">
+									<div class="col-lg-4 col-md-6">
+										<div class="single-feature">
+											<div class="icon one">
+												<img src="assets/images/feature/icon1.png" alt="">
+											</div>
+											<div class="content">
+												<h4 class="title">
+													Exclusive Offer
+												</h4>
+												<a href="signup.html" class="link">Claim Now <i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="single-feature">
+											<div class="icon two">
+												<img src="assets/images/feature/icon2.png" alt="">
+											</div>
+											<div class="content">
+												<h4 class="title">
+													Provably Fair
+												</h4>
+												<a href="signup.html" class="link">Play Now <i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="single-feature">
+											<div class="icon three">
+												<img src="assets/images/feature/icon3.png" alt="">
+											</div>
+											<div class="content">
+												<h4 class="title">
+														24/7 Support
+												</h4>
+												<a href="#" class="link">Contact Now <i class="fas fa-arrow-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Features Area End -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 col-md-10">
+					<div class="section-heading">
+						<h5 class="subtitle">
+								Award Winning Game
+						</h5> 
+						<h2 class="title">
+								DS-Rummy
+						</h2>
+						<p class="text">
+							Win Upto 10C, Join the league of Rummy Players Now
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-lg-12 ">
+					
+            <div class="item">
+							
+            </div>
+            <div class="item">
+							<div class="single-game justify-content-center">
+									<img src="assets/images/game/icon2.png" alt="">
+									<a href="signup.html" class="mybtn2">PLay NoW !</a>
+							</div>
+						</div>
+						
+						<div class="item">
+							
+						</div>
+						
+						
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Featured Game Area	End -->
+
+	<!-- Latest Activities Area Start -->
+	 <section class="activities">
+		 <img class="shape shape1" src="assets/images/people/shape1.png" alt="">
+		 <img class="shape shape2" src="assets/images/people/shape2.png" alt="">
+		 <img class="shape shape3" src="assets/images/people/shape3.png" alt="">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 col-md-10">
+					<div class="section-heading">
+						<h5 class="subtitle">
+							The Smarter Way 
+						</h5>
+						<h2 class="title">
+							To Earn Money
+						</h2>
+						<p class="text">
+							Become Rich Faster and Live Your dream Life
+						</p>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<!-- Fun fact Area Start -->
+		<div class="funfact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="single-fun">
+							<img src="assets/images/funfact/icon1.png" alt="">
+							<div class="count-area">
+								<div class="count">10 Crore</div>
+							</div>
+							<p>
+									Players
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-fun">
+							<img src="assets/images/funfact/icon2.png" alt="">
+							<div class="count-area">
+								<div class="count">20+</div>
+							</div>
+							<p>
+									Awards for best Rummy
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-fun">
+							<img src="assets/images/funfact/icon3.png" alt="">
+							<div class="count-area">
+								<div class="count">20 Lack</div>
+							</div>
+							<p>
+									Winners
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fun fact Area End -->
+	</section> 
+	<!-- Latest Activities Area End -->
+
+
+	<!-- Get Start Area Start -->
+	 <section class="get-start">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 d-flex align-self-center">
+					<div class="left-area">
+						<div class="section-heading">
+							<h5 class="subtitle">
+								every day lots of  wins
+							</h5>
+							<h2 class="title ">
+									be one of them
+							</h2>
+							<p class="text">
+									Get started in less than 2 min 
+									
+							</p>
+							<a href="signup.html" class="mybtn1">Play  Now!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="right-image">
+						<img src="assets/images/get-start.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- Get Start Area End -->
+
+	<!-- Recent Winners Area Start -->
+	<section class="recent-winners">
+			<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 col-md-10">
+							<div class="section-heading">
+								<h5 class="subtitle">
+									Try to Check out our
+								</h5>
+								<h2 class="title">
+										Recent Winners
+								</h2>
+								<p class="text">
+									We update our site regularly; more and more winners are added every day! To locate the most recent winner's information
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-winer">
+								<div class="top-area">
+									<div class="left">
+										<h4 class="name">
+											Arun Prasad
+										</h4>
+										<p class="date">
+												01.11.2020
+										</p>
+									</div>
+									<div class="right">
+										<p class="id">#5747e75482</p>
+									</div>
+								</div>
+								<div class="bottom-area">
+									<div class="left">
+											2,353 $
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-winer">
+								<div class="top-area">
+									<div class="left">
+										<h4 class="name">
+												Aravind
+										</h4>
+										<p class="date">
+												11.10.2020
+										</p>
+									</div>
+									<div class="right">
+										<p class="id">#5747e75482</p>
+									</div>
+								</div>
+								<div class="bottom-area">
+									<div class="left">
+											3,524 $
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-winer">
+								<div class="top-area">
+									<div class="left">
+										<h4 class="name">
+											 Bwina
+										</h4>
+										<p class="date">
+												13.11.2020
+										</p>
+									</div>
+									<div class="right">
+										<p class="id">#5747e75482</p>
+									</div>
+								</div>
+								<div class="bottom-area">
+									<div class="left">
+											5,024 $
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			</div>
+		</section> 
+	<!-- Recent Winners Area End -->
+
+	<!-- Footer Area Start -->
+	<footer class="footer" id="footer">
+		<div class="subscribe-area">
+			<div class="container">
+				<div class="row">
+				
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-lg-3">
+					<div class="footer-widget info-link-widget">
+						<h4 class="title">
+							About 
+						</h4>
+						<ul class="link-list">
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	About Us
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	Contact Us
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	Latest Blog
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	Authenticity Guarantee
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	Customer Reviews
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>	Privacy Policy
+
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="footer-widget info-link-widget">
+						<h4 class="title">
+							My Account
+						</h4>
+						<ul class="link-list">
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> Manage Your Account
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> How to Deposit
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> How to Withdraw
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> Account Varification
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> Safety & Security
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i> Membership Level
+
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="footer-widget info-link-widget">
+						<h4 class="title">
+							help center 
+						</h4>
+						<ul class="link-list">
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Help centre
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>FAQ
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Quick Start Guide
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Tutorials
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Borrow
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Lend
+
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3">
+					<div class="footer-widget info-link-widget">
+						<h4 class="title">
+							Legal Info
+						</h4>
+						<ul class="link-list">
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Risk Warnings
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Privacy Notice
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Security
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Terms of Service
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Become Affiliate
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fas fa-angle-double-right"></i>Complaints Policy
+
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="left-area">
+							<p>Copyright © 2020.All Rights Reserved By <a href="#">DS - RUMMY</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<ul class="copright-area-links">
+							<li>
+								<a href="#">Terms Of Use</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Gamble</a>
+							</li>
+							<li>
+								<a href="#">Aware</a>
+							</li>
+							<li>
+								<a href="#">Help Cente</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer> 
+	<!-- Footer Area End -->
+
+	<!-- Back to Top Start -->
+	<div class="bottomtotop">
+		<i class="fas fa-chevron-right"></i>
+	</div>
+	<!-- Back to Top End -->
+
+	<!-- Login Area Start -->
+	<div class="modal fade login-modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-body">
+					<div class="logo-area">
+							<img class="logo" src="assets/images/logo.png" alt="">
+					</div>
+					<div class="header-area">
+						<h4 class="title">Great to have you back!</h4>
+						<p class="sub-title">Enter your details below.</p>
+					</div>
+					<div class="form-area">
+						<form action="#"  method="POST">
+							<div class="form-group">
+									<label for="login-input-email">Email*</label>
+									<input type="email" class="input-field" id="login-input-email"  placeholder="Enter your Email">
+							</div>
+							<div class="form-group">
+									<label for="login-input-password">Password*</label>
+									<input type="password" class="input-field" id="login-input-password"  placeholder="Password">
+							</div>
+							<div class="form-group">
+								<div class="box">
+									<div class="left">
+											<input type="checkbox" class="check-box-field" id="input-save-password" checked>
+										<label for="input-save-password">Remember Password</label>
+									</div>
+									<div class="right">
+										<a href="#">
+											Forgot Password?
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								   <button type="submit" class="mybtn1">Log In</button>
+							</div>
+						</form>
+					</div>
+					<div class="form-footer">
+						<p>Not a member? 
+								<a href="#">Create account <i class="fas fa-angle-double-right"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- Login Area End -->
+	
+		<!-- SignIn Area Start -->
+		<div class="modal fade login-modal sign-in" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered " role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="modal-body">
+						<div class="logo-area">
+								<img class="logo" src="assets/images/logo.png" alt="">
+						</div>
+						<div class="header-area">
+							<h4 class="title">Great to have you back!</h4>
+							<p class="sub-title">Enter your details below.</p>
+						</div>
+						<div class="form-area">
+							<form action="#" method="POST">
+								<div class="form-group">
+										<label for="input-name">Name*</label>
+										<input type="text" class="input-field" id="input-name"  placeholder="Enter your Name">
+								</div>
+								<div class="form-group">
+										<label for="input-email">Email*</label>
+										<input type="email" class="input-field" id="input-email"  placeholder="Enter your Email">
+								</div>
+								<div class="form-group">
+										<label for="input-password">Password*</label>
+										<input type="password" class="input-field" id="input-password"  placeholder="Enter your password">
+								</div>
+								<div class="form-group">
+										<label for="input-con-password">confirm password**</label>
+										<input type="password" class="input-field" id="input-con-password"  placeholder="Enter your Confirm Password">
+								</div>
+								<div class="form-group">
+										<select>
+											<option value="0">BTC</option>
+											<option value="1">USD</option>
+											<option value="2">EUR</option>
+										</select>
+								</div>
+								<div class="form-group">
+									<div class="check-group">
+											<input type="checkbox" class="check-box-field" id="input-terms" checked>
+											<label for="input-terms">
+													I agree with <a href="#">terms and Conditions</a> and  <a href="#">privacy policy</a>
+											</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="mybtn1">Take Bonus</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- SignIn Area End -->
+
+	<!-- jquery -->
+	<script src="assets/js/jquery.js"></script>
+	<!-- popper -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- plugin js-->
+	<script src="assets/js/plugin.js"></script>
+
+	<!-- MpusemoverParallax JS-->
+	<script src="assets/js/TweenMax.js"></script>
+	<script src="assets/js/mousemoveparallax.js"></script>
+	<!-- main -->
+	<script src="assets/js/main.js"></script>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/javascripts/socket.js"></script>
-<script src="/javascripts/index.js"></script>
 
+<!-- Mirrored from pixner.net/dooplo/dooplo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Nov 2020 06:09:33 GMT -->
 </html>

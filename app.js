@@ -45,11 +45,11 @@ next();
 
 
 app.get("/login", function (req, res) {
-  res.render("login.html");
+  res.render( __dirname + "/public/login.html");
 });
 
 app.get('/signup', function (req, res) {
-  res.render("signup.html");
+  res.render(__dirname + "/public/signup.html");
 });
 /*----------------------ENDPOINTS----------------------*/
 
@@ -63,7 +63,7 @@ app.get('/start', function (req, res) {
     .auth()
     .verifySessionCookie(sessionCookie, true /** checkRevoked */)
     .then(() => {
-      res.render("start.html");
+      res.render( __dirname + "/public/start.html");
     })
     .catch((error) => {
       res.redirect("/login");
@@ -72,7 +72,18 @@ app.get('/start', function (req, res) {
 app.get('/join/:lobby', (req, res) => {
   let code = req.params.lobby;
   if (rummy.addLobby(code)) {
-    res.redirect('/game/' + req.params.lobby + '/' + rummy.lobbys[code].token);
+    const sessionCookie = req.cookies.session || "";
+
+  admin
+    .auth()
+    .verifySessionCookie(sessionCookie, true /** checkRevoked */)
+    .then(() => {
+      res.redirect('/game/' + req.params.lobby + '/' + rummy.lobbys[code].token);
+    })
+    .catch((error) => {
+      res.redirect("/login");
+    });
+    
   } else {
     res.redirect('/');
   }
@@ -81,7 +92,24 @@ app.get('/join/:lobby', (req, res) => {
 app.get('/joincpu/:lobby', (req, res) => {
   let code = req.params.lobby;
   if (rummy.addLobby(code, cpu=true)) {
-    res.redirect('/game/' + req.params.lobby + '/' + rummy.lobbys[code].token);
+    const sessionCookie = req.cookies.session || "";
+
+  admin
+    .auth()
+    .verifySessionCookie(sessionCookie, true /** checkRevoked */)
+    .then(() => {
+      res.redirect('/game/' + req.params.lobby + '/' + rummy.lobbys[code].token);
+    })
+    .catch((error) => {
+      res.redirect("/login");
+    });
+    
+
+
+
+
+    
+   
   } else {
     res.redirect('/');
   }

@@ -4,21 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firebase Server Auth</title>
-    <link rel="stylesheet" href="./mvp.css" />
+    <link rel="stylesheet" href="./stylesheets/login.css" />
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js" defer ></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js" defer ></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer ></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <main>
       <section>
-        <form id="login">
-          <label>Login</label>
-          <input type="text" name="login" />
-          <label>Password</label>
-          <input type="password" name="password" />
-          <button>Log in</button>
-        </form>
+        <div class="container login-container">
+          <div class="row">
+            <div class="col-md-12 login-form-1">
+
+              <form id="login">
+                <h3>Login In </h3>
+                    
+                        <div class="form-group">
+                            <input type="text" name="login" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
+                            <a href="signup.html" class="btnForgetPwd">New User Click Here to Sign-up</a>
+                        </div>
+              </form>
+            </div>
+          </div>
+           
+        </div>
+          
+
+
+
+
+
+
+
+
+        
       </section>
 
       <script>
@@ -64,7 +94,7 @@
                   return firebase.auth().signOut();
                 })
                 .then(() => {
-                  window.location.assign("/profile");
+                  window.location.assign("/start");
                 });
               return false;
             });
